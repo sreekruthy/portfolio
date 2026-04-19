@@ -1,0 +1,13 @@
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+section {
+  margin-top: 20px;
+}
