@@ -15,7 +15,7 @@ function Home() {
       <section className="card">
         <h2 className="section-title">About Me</h2>
         <p>
-          I’m a passionate, ambitious person, driven by the kind of problems that don’t have obvious answers. The ones that sit somewhere between data, decisions, and human behavior. I enjoy taking something complex—whether it’s a system, an idea, or a pattern—and shaping it into something that actually makes sense and works in the real world. Not just in theory. 
+          I’m a passionate, ambitious person, driven by the kind of problems that don’t have obvious answers. The ones that sit somewhere between data, decisions, and human behavior. I enjoy taking something complex—whether it’s a system, an idea, or a pattern and shaping it into something that actually makes sense and works in the real world. Not just in theory. 
           What matters to me isn’t just building things, but building things that hold up - that are thoughtful, reliable, and intentional. I’m constantly learning, not to collect skills, but to understand how to see problems better, think deeper, and create work that genuinely stands out.
         </p>
       </section>
@@ -25,7 +25,7 @@ function Home() {
         <div className="interests-grid">
           {[
             { label: "Quantitative Finance" },
-            { label: "Hedge Funds & Trading" },
+            { label: "Hedge Funds" },
             { label: "Big Data Analytics" },
             { label: "Machine Learning" },
             { label: "AI in FinTech" },

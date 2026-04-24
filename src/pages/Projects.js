@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
+import { link } from "node:fs";
 
 const projects = [
   {
@@ -111,6 +112,7 @@ const projects = [
       "Learnt about Unity's game loop, asset management, and interactive object design",
     ],
     insight: "Building a 3D interactive environment requires deep integration of physics, scripting, and scene management to create a seamless player experience.",
+    link: "https://github.com/sreekruthy/3D-Escape-Room-Game",
     color: "#2c5364",
   },
 ];
