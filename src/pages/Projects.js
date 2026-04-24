@@ -3,23 +3,8 @@ import "./Projects.css";
 
 const projects = [
   {
-    name: "AI Financial Analyst Copilot",
-    period: "March 2026 – Present",
-    techStack: ["Python", "RAG", "LLMs", "GenAI", "ML"],
-    description:
-      "Developing a GenAI system using RAG and agent-based workflows to analyze financial data and generate explainable insights from reports and market sources.",
-    points: [
-      "Integrating ML models for financial forecasting with LLMs",
-      "Built scalable pipeline for analysing financial trends from reports and market sources",
-      "Leveraging Retrieval-Augmented Generation for context-aware financial Q&A",
-    ],
-    insight: "Combining RAG with agent-based reasoning produces more grounded and explainable financial insights than standalone LLMs.",
-    link: "https://github.com/sreekruthy/ai-financial-analyst",
-    color: "#00adb5",
-  },
-  {
     name: "FinDebate – Multi-Agent AI System",
-    period: "2025",
+    period: "March 2026 – Present",
     techStack: ["Python", "LLM APIs", "NLP", "Data Pipelines"],
     description:
       "AI-driven system that simulates structured debates between multiple agents to improve financial decision-making through iterative reasoning and counterargument generation.",
@@ -47,12 +32,12 @@ const projects = [
       "Implemented email-driven interaction flows with secure token-based responses and expiry handling",
     ],
     insight: "Combining automated ML decisions with human-in-the-loop validation significantly improves fraud detection reliability while reducing false positives.",
-    link: "https://github.com/sreekruthy/fraud-detection",
+    link: "https://github.com/sreekruthy/fraud_detection",
     color: "#e74c3c",
   },
   {
     name: "Human Uncertainty for Robust Image Classification",
-    period: "2025",
+    period: "April 2026 – Present",
     techStack: ["Python", "PyTorch", "CNNs", "GPU Acceleration"],
     description:
       "Deep learning system inspired by the paper 'Human Uncertainty Makes Classification More Robust' to improve model performance under uncertain and noisy labels.",
@@ -64,12 +49,26 @@ const projects = [
       "Enabled structured comparison of architectures to study robustness under uncertainty",
     ],
     insight: "Wider and deeper architectures improved robustness in uncertain classification settings, highlighting the importance of model capacity in handling noisy labels.",
-    link: "https://github.com/sreekruthy/human-uncertainty-classification",
+    link: "https://github.com/sreekruthy/human_uncertainity_for_image_classification",
     color: "#f39c12",
   },
   {
+    name: "AI Financial Analyst Copilot",
+    period: "April 2026 – Present",
+    techStack: ["Python", "RAG", "LLMs", "GenAI", "ML"],
+    description:
+      "Developing a GenAI system using RAG and agent-based workflows to analyze financial data and generate explainable insights from reports and market sources.",
+    points: [
+      "Integrating ML models for financial forecasting with LLMs",
+      "Built scalable pipeline for analysing financial trends from reports and market sources",
+      "Leveraging Retrieval-Augmented Generation for context-aware financial Q&A",
+    ],
+    insight: "Combining RAG with agent-based reasoning produces more grounded and explainable financial insights than standalone LLMs.",
+    color: "#00adb5",
+  },
+  {
     name: "Student Management System",
-    period: "2025",
+    period: "April 2026",
     techStack: ["React (Vite)", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "JWT", "Axios"],
     description:
       "Production-ready full-stack web application to manage group-based academic workflows, enabling seamless coordination between students and professors.",
@@ -81,12 +80,12 @@ const projects = [
       "Deployed using Vercel (frontend), Render (backend), and managed PostgreSQL",
     ],
     insight: "Designing both the database schema and API layer was critical in ensuring consistency across group-based workflows, highlighting how backend architecture directly impacts frontend usability.",
-    link: "https://github.com/sreekruthy/student-management",
+    link: "https://github.com/sreekruthy/student_management_system-joineazy",
     color: "#27ae60",
   },
   {
     name: "Video Streaming Platform",
-    period: "2025",
+    period: "April 2026 – Present",
     techStack: ["React.js", "JavaScript", "HLS.js", "JWT", "CSS"],
     description:
       "Scalable video streaming platform focused on delivering a smooth, interactive, and responsive user experience with adaptive streaming and secure authentication.",
@@ -98,7 +97,6 @@ const projects = [
       "Designed and integrated JWT-based authentication flows (login/register) using AuthContext for state management",
     ],
     insight: "Delivering a high-quality viewer experience requires balancing performance (adaptive streaming, lazy loading) with interactivity, ensuring smooth playback under varying network conditions.",
-    link: "https://github.com/sreekruthy/video-streaming",
     color: "#8e44ad",
   },
   {
@@ -113,7 +111,6 @@ const projects = [
       "Learnt about Unity's game loop, asset management, and interactive object design",
     ],
     insight: "Building a 3D interactive environment requires deep integration of physics, scripting, and scene management to create a seamless player experience.",
-    link: "https://github.com/sreekruthy/escape-room",
     color: "#2c5364",
   },
 ];
@@ -144,7 +141,7 @@ function ProjectCard({ project }) {
             ))}
           </ul>
           <div className="insight-box">
-            <span className="insight-label">💡 Key Insight</span>
+            <span className="insight-label"> Key Insight</span>
             <p>{project.insight}</p>
           </div>
         </div>
@@ -175,7 +172,6 @@ function Projects() {
     <div className="projects">
       <div className="projects-header">
         <h1>My Projects</h1>
-        <p>A collection of work spanning AI, FinTech, full-stack development, and game development.</p>
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (
