@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Projects.css";
-import { link } from "node:fs";
 
 const projects = [
   {
