@@ -21,23 +21,6 @@ function Home() {
       </section>
 
       <section className="card">
-        <h2 className="section-title">Research Interests</h2>
-        <div className="interests-grid">
-          {[
-            { label: "Quantitative Finance" },
-            { label: "Hedge Funds" },
-            { label: "Big Data Analytics" },
-            { label: "Machine Learning" },
-            { label: "AI in FinTech" },
-          ].map(({ label }) => (
-            <div className="interest-item" key={label}>
-              <span>{label}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="card">
         <h2 className="section-title">Skills</h2>
 
         <div className="skills-section">
@@ -246,6 +229,23 @@ function Home() {
             <span className="cert-title">{title}</span>
             <span className="cert-org">{org}</span>
           </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="card">
+        <h2 className="section-title">Research Interests</h2>
+        <div className="interests-grid">
+          {[
+            { label: "Quantitative Finance" },
+            { label: "Hedge Funds" },
+            { label: "Big Data Analytics" },
+            { label: "Machine Learning" },
+            { label: "AI in FinTech" },
+          ].map(({ label }) => (
+            <div className="interest-item" key={label}>
+              <span>{label}</span>
+            </div>
           ))}
         </div>
       </section>
