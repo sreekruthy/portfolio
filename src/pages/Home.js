@@ -83,7 +83,7 @@ function Home() {
             <div className="skills-row">
               <span className="skills-subcategory">Tools & Technologies</span>
               <div className="skills-tags">
-                {["Git", "Tableau", "MATLAB", "Docker"].map((s) => (
+                {["Git", "Tableau", "MATLAB", "Docker", "Jupyter Notebook", "Power BI", "MySQL", "Excel"].map((s) => (
                   <span className="skill-tag" key={s}>{s}</span>
                 ))}
               </div>
@@ -147,6 +147,12 @@ function Home() {
             </a>
           </div>
           <div className="detail-row">
+            <span className="detail-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/sreekruthy-reddy" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/sreekruthy-reddy
+            </a>
+          </div>
+          <div className="detail-row">
             <span className="detail-label">University</span>
             <span>Mahindra University, Hyderabad – 500043</span>
           </div>
@@ -165,7 +171,8 @@ function Home() {
             <div className="edu-content">
               <h3>B.Tech – Computer Science & Engineering</h3>
               <p className="edu-institute">Mahindra University, Hyderabad</p>
-              <p className="edu-meta">Aug 2023 – Present &nbsp;·&nbsp; CGPA: 9.39 / 10 (till 5th semester)</p>
+              <p className="edu-meta">Aug 2023 – Present &nbsp;·&nbsp; CGPA: 9.37 / 10 (till 5th semester)</p>
+              <p className="edu-meta">Merit Scholarship 2024 & 2025 — Top 10% of batch</p>
             </div>
           </div>
 
@@ -192,6 +199,54 @@ function Home() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      <section className="card">
+        <h2 className="section-title">Activities & Leadership</h2>
+        <h3 className="skills-category-title">Clubs</h3>
+        <div className="leadership-list">
+          <div className="leadership-item">
+            <h3>Design Head — Qubit Club</h3>
+            <p>Led the club's creative initiatives by managing a team of designers and collaborating with organizers to develop branding, event promotions, and engaging visual campaigns. Strengthened leadership, teamwork, and communication skills while balancing multiple projects and deadlines.</p>
+          </div>
+          <div className="leadership-item">
+            <h3>Member — EcoFin Club</h3>
+            <p>Participated in discussions and activities related to financial markets, investment strategies, and economic trends, developing analytical thinking and an interest in data-driven decision-making.</p>
+          </div>
+          <div className="leadership-item">
+            <h3>Member — Management Consulting Club</h3>
+            <p>Engaged in case-study discussions, problem-solving sessions, and strategy-based activities, building structured thinking, teamwork, and business analysis skills.</p>
+          </div>
+        </div>
+    
+
+        <div className="skills-divider" />
+        <h3 className="skills-category-title">Interests</h3>
+        <div className="interests-grid">
+          {["Stock Markets", "Photography", "Badminton", "Squash", "Social Initiatives"].map(
+            (label) => (
+            <div className="interest-item" key={label}>
+              <span>{label}</span>
+            </div>
+            ))}
+        </div>
+      </section>
+
+      <section className="card">
+        <h2 className="section-title">Certifications</h2>
+        <div className="certifications-list">
+          {[
+            { title: "Supervised Machine Learning", org: "DeepLearning.AI / Stanford" },
+            { title: "Business Analytics with GenAI", org: "BITSoM (Ongoing)" },
+            { title: "Oracle AI Vector Search", org: "Oracle" },
+            { title: "AI Workshop", org: "IIT Hyderabad" },
+          ].map(({ title, org }) => (
+          <div className="certification-item" key={title}>
+            <span className="cert-title">{title}</span>
+            <span className="cert-org">{org}</span>
+          </div>
+          ))}
         </div>
       </section>
     </div>

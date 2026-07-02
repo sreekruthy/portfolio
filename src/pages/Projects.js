@@ -3,16 +3,33 @@ import "./Projects.css";
 
 const projects = [
   {
-    name: "FinDebate – Multi-Agent AI System",
-    period: "March 2026 – Present",
-    techStack: ["Python", "LLM APIs", "NLP", "Data Pipelines"],
+    name: "Living Knowledge System: Dynamic Memory for LLMs",
+    period: "June 2026 – Present",
+    techStack: ["Python", "LLMs", "RAG", "Vector Databases"],
     description:
-      "AI-driven system that simulates structured debates between multiple agents to improve financial decision-making through iterative reasoning and counterargument generation.",
+      "Developing a dynamic memory architecture for LLMs that uses contradiction detection and confidence-based supersession to keep knowledge current and consistent over time.",
     points: [
-      "Engineered a multi-agent debate loop enabling iterative argument and counterargument generation across multiple rounds",
-      "Implemented response evaluation and scoring logic to rank arguments based on relevance, consistency, and strength",
-      "Designed termination criteria (convergence / max iterations) to ensure efficient and meaningful debate outcomes",
-      "Integrated debate outputs with financial analysis modules to support data-driven investment insights",
+      "Implementing adaptive RAG and temporal reasoning to maintain evolving knowledge states across sessions",
+      "Designing contradiction detection logic to identify and resolve conflicting information as new data arrives",
+      "Building confidence-based supersession so newer, more reliable facts override outdated ones",
+      "Evaluating memory consistency and stale-answer reduction on synthetic benchmark datasets"
+    ],
+
+    insight: "Static LLM knowledge degrades over time without a mechanism to detect contradictions and update beliefs — dynamic memory architectures are essential for keeping AI systems reliable in fast-changing domains.",
+  },
+
+
+  {
+    name: "FinDebate – Multi-Agent AI System",
+    period: "March 2026 – June 2026",
+    techStack: ["Python", "LLM APIs", "LangGraph", "RAG", "Vector databases", "Data Pipelines"],
+    description:
+      "AI-driven system that simulates structured debates between 5 specialized agents to improve financial decision-making through iterative reasoning and counterargument generation.",
+    points: [
+      "Built a multi-agent debate loop with 5 specialized agents (earnings, valuation, market, risk, sentiment) that iteratively refine investment theses",
+      "Implemented trust and skeptic factors to dynamically moderate agent influence across debate rounds, enabling adaptive argument weighting",
+      "Designed an aggregation pipeline combining multi-agent outputs into a final decision via a leader agent",
+      "Improved decision quality over single-agent LLM analysis through structured, adversarial reasoning",
     ],
     insight: "Iterative debate frameworks significantly improve reasoning quality by exposing conflicting perspectives, leading to more balanced and robust financial decisions.",
     link: "https://github.com/sreekruthy/findebate",
@@ -20,33 +37,30 @@ const projects = [
   },
   {
     name: "Fraud Detection System – FinTech",
-    period: "February 2026 – Present",
+    period: "February 2026 – May 2026",
     techStack: ["React.js", "Node.js", "FastAPI", "MongoDB", "ML APIs", "JWT"],
     description:
-      "Full-stack fraud detection system combining ML predictions with real-time user feedback and admin intervention to improve transaction security and model accuracy.",
+      "Full-stack fraud detection dashboard processing 400+ transactions with live alerts, fraud visualizations, and admin intervention tools to improve transaction security and reduce manual review effort.",
     points: [
-      "Designed a dual-flow fraud handling system distinguishing between SUSPICIOUS (user-verifiable) and FRAUD (auto-blocked) transactions",
-      "Engineered an alert lifecycle system with severity levels (HIGH / CRITICAL), hold windows, and resolution states",
-      "Built interactive frontend workflows for real-time alerts, including user response, countdown timers, and status updates",
-      "Integrated user feedback loops to generate labeled data for ML model retraining",
-      "Implemented email-driven interaction flows with secure token-based responses and expiry handling",
+      "Developed an admin-facing dashboard processing 400+ transactions with live alerts, fraud status visualizations, and activity logs",
+      "Structured a MongoDB layer handling 400+ transactions across 16+ users, with an alert and email notification pipeline for flagged events",
+      "Designed a dual-flow system distinguishing SUSPICIOUS (user-verifiable) and FRAUD (auto-blocked) transactions with severity levels and hold windows",
+      "Reduced manual review overhead by surfacing interpretable fraud signals directly in the UI",
     ],
-    insight: "Combining automated ML decisions with human-in-the-loop validation significantly improves fraud detection reliability while reducing false positives.",
+    insight: "Combining automated ML decisions with human-in-the-loop validation significantly improves fraud detection reliability while reducing false positives and manual review effort.",
     link: "https://github.com/sreekruthy/fraud_detection",
     color: "#e74c3c",
   },
   {
     name: "Human Uncertainty for Robust Image Classification",
-    period: "April 2026 – Present",
+    period: "April 2026 – May 2026",
     techStack: ["Python", "PyTorch", "CNNs", "GPU Acceleration"],
     description:
       "Deep learning system inspired by the paper 'Human Uncertainty Makes Classification More Robust' to improve model performance under uncertain and noisy labels.",
     points: [
-      "Built multiple CNN architectures including ResNet-20, ResNet-110, Wide ResNet (WRN-28-10), and VGG-16 with BatchNorm",
-      "Implemented residual connections, adaptive pooling, and modular architecture components",
-      "Developed a flexible model factory (get_model) for dynamic architecture selection and device compatibility",
-      "Integrated lightweight models (LightCNN) for rapid experimentation and debugging",
-      "Enabled structured comparison of architectures to study robustness under uncertainty",
+      "Built and evaluated CNN training pipelines (ResNet-18, VGG-16, Wide ResNet) on CIFAR-10H with soft-label supervision, conducting 20+ experiments to analyze robustness under noisy labels",
+      "Designed modular architecture with swappable prediction heads (Linear, MLP, Temperature-Scaled Softmax) for systematic ablations",
+      "Evaluated using KL-divergence loss, benchmarking soft vs. hard label training to quantify robustness improvements",
     ],
     insight: "Wider and deeper architectures improved robustness in uncertain classification settings, highlighting the importance of model capacity in handling noisy labels.",
     link: "https://github.com/sreekruthy/human_uncertainity_for_image_classification",
@@ -85,7 +99,7 @@ const projects = [
   },
   {
     name: "Video Streaming Platform",
-    period: "April 2026 – Present",
+    period: "April 2026 – May 2026",
     techStack: ["React.js", "JavaScript", "HLS.js", "JWT", "CSS"],
     description:
       "Scalable video streaming platform focused on delivering a smooth, interactive, and responsive user experience with adaptive streaming and secure authentication.",
